@@ -1,0 +1,149 @@
+﻿* {
+    font: normal 20px Amaranth, sans-serif;
+}
+
+body {
+    background-color: #e3e0d8;
+   
+}
+
+.active_Room {
+    position:absolute;
+    right:1%;
+    border: 1px solid black;
+    height:100%;
+    width:75%;
+    height:50%;
+    padding:5px; margin-bottom:8px
+}
+#personal_List {
+    position:absolute;
+    left:1%;
+    height:100%;
+    width:20%;
+    border: 1px solid black;
+    
+}
+
+.divChat_Style {
+    position:absolute;
+    bottom:0%;
+    right:1%;
+    border: 1px solid black;
+    width:75.5%;
+    height:30%;
+
+}
+
+
+
+
+/* Quelle: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar */
+.ul_Style {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+
+    	background-color:#27292d;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	/*display:inline-block;*/
+	/*cursor:pointer;*/
+	color:#f5f2ee;
+	font-size:17px;
+	font-style:italic;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.li_Style {
+
+    display:block;
+    float: left;
+    padding: 10px;
+    
+}
+#profile_Dropdown:hover .dropdown_Content{
+   
+    display: block;
+}
+#create_Dropdown:hover .dropdown_Content {
+    display: block;
+}
+
+.dropdown_Content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+.dropdown_Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.li_Style a:hover {
+    background-color: #111;
+
+}
+.li_Style a {
+    color:#f5f2ee;
+}
+/*Quelle Ende*/
+#message {
+    position:absolute;
+    bottom:1%;
+    left:1%;
+    width:90%;
+
+}
+#send_Button {
+    position:absolute;
+    bottom:1%;
+    right:1%;
+    width:7%;
+}
+
+/*Quelle:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs*/
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/*Quelle Ende*/

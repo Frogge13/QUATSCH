@@ -1,13 +1,67 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
     <title>QUATSCH</title>
-    <link rel="stylesheet" href="css/master.css">
-  </head>
-  <body>
-  
+    <link rel="stylesheet" type="text/css" href="css/MainPageCSS.css">
+    <link rel="stylesheet" href="components/quatsch-chatbox.css">
+</head>
+<body>
+
+<ul class="ul_Style">
+  <li class="li_Style" id="profile_Dropdown">
+      <a href="#">Profil</a>
+      <div class="dropdown_Content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  <li class="li_Style" id="create_Dropdown">
+      <a href="#">Erstellen</a>
+      <div class="dropdown_Content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  <li class="li_Style"><a href="#">Kontakte</a></li>
+  <li class="li_Style"><a href="#">Suche</a></li>
+  <li class="li_Style"><a href="#">Hilfe</a></li>
+
+</ul>
+     <div class="div_Style" id="personal_List">
+      <div class="tab">
+      <button class="tablinks">Verfuegbare Raeume</button>
+      <button class="tablinks">Eigene Raeume</button>
+      <button class="tablinks">Freunde</button>
+    </div>
+
+    <div id="avaiableRooms" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="ownRooms" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="friends" class="tabcontent">
+</div>
+    </div>
+      <div class="active_Room">Aktueller Raum</div>
+
+
+
+    <div class="divChat_Style" id="chat">
+      <quatsch-chatbox nickname="test"></quatsch-chatbox>
+    </div>
+
     <script src="scripts/vendor/peer.min.js" charset="utf-8"></script>
     <script src="scripts/main.js" charset="utf-8"></script>
-  </body>
+
+    <script src="components/quatsch-chatbox.js" charset="utf-8"></script>
+</body>
 </html>

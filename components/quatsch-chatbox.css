@@ -1,0 +1,22 @@
+quatsch-chatbox .inputElement {
+    float: left;
+    width: 90%;
+}
+
+quatsch-chatbox .sendButtonElement {
+  float:left;
+  width: 10%;
+}
+
+quatsch-chatbox * {
+  box-sizing: border-box;
+}
+
+quatsch-chatbox .chatElement {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+quatsch-chatbox .chatLineElement {
+  margin: 0px;
+}
