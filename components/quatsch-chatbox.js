@@ -57,14 +57,17 @@ class QuatschChatbox extends HTMLElement {
 
     send(){
       let val = this.inputElement.value;
-      this.appendMessage(null, val);
-      this.inputElement.value = null;
-      this.inputElement.focus();
+      if (val != '') {
+        this.appendMessage(null, val);
+        this.inputElement.value = null;
+        this.inputElement.focus();
 
-      let e = new CustomEvent('message', {
-        message: val
-      });
-      this.dispatchEvent(e);
+        let e = new CustomEvent('message', {
+          message: val
+        });
+        this.dispatchEvent(e);
+      }
+
     }
 
 }
