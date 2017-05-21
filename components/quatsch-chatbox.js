@@ -55,6 +55,21 @@ class QuatschChatbox extends HTMLElement {
         }
     }
 
+    setMessages(m) {
+        this.clear();
+        for(let key in m) {
+            let item = m[key];
+            this.appendMessage(item.from, item.val);
+        }
+    }
+
+    clear() {
+
+        while(this.chatElement.hasChildNodes())
+            this.chatElement.removeChild(this.chatElement.lastChild);
+
+    }
+
     send(){
       let val = this.inputElement.value;
       if (val != '') {
@@ -63,7 +78,7 @@ class QuatschChatbox extends HTMLElement {
         this.inputElement.focus();
 
         let e = new CustomEvent('message', {
-          message: val
+          detail: val
         });
         this.dispatchEvent(e);
       }

@@ -33,31 +33,31 @@
     </ul>
 
      <div class="div_Style" id="personal_List">
-    <div class="tab">
-        <button class="tablinks">Verfuegbare Raeume</button>
-        <button class="tablinks">Eigene Raeume</button>
-        <button class="tablinks">Freunde</button>
+        <div class="tab">
+            <button class="tablinks">Verfuegbare Raeume</button>
+            <button class="tablinks">Eigene Raeume</button>
+            <button class="tablinks">Freunde</button>
+        </div>
+
+        <div id="avaiableRooms" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="ownRooms" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="friends" class="tabcontent active">
+            <button type="button" id="btn-add-friend">Freund hinzufügen</button>
+            <quatsch-friends id="friend-list"></quatsch-friends>
+        </div>
     </div>
-
-    <div id="avaiableRooms" class="tabcontent">
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
-    </div>
-
-    <div id="ownRooms" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p>
-    </div>
-
-    <div id="friends" class="tabcontent">
-</div>
-    </div>
-      <div class="active_Room">Aktueller Raum</div>
-
-
+    <div class="active_Room">Aktueller Raum</div>
 
     <div class="divChat_Style" id="chat">
-      <quatsch-chatbox nickname="test"></quatsch-chatbox>
+        <quatsch-chatbox id="chatbox" nickname="test"></quatsch-chatbox>
     </div>
 
     <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
@@ -65,5 +65,6 @@
     <script src="scripts/main.js" charset="utf-8"></script>
 
     <script src="components/quatsch-chatbox.js" charset="utf-8"></script>
+    <script src="components/quatsch-friends.js" charset="utf-8"></script>
 </body>
 </html>
