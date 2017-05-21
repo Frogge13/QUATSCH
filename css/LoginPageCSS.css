@@ -9,6 +9,34 @@
 		color: #3399ff;
 					
 	}
+/*http://stackoverflow.com/questions/17275707/how-do-i-evenly-add-space-between-a-label-and-the-input-field-regardless-of-leng
+}*/
+.label_Style {
+    width:5%;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+
+input, label {
+    float:left;
+}
+
+/*Quelle Ende*/
+
+#Container {
+    position:absolute;
+    width:90%;
+    margin: auto;
+    left:45%;
+   
+}
+
+
+
+
+
+
 .button_Style{
 	/*background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
 	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
@@ -44,8 +72,3 @@
     margin:auto;
 }
 
-#Registration_Button {
-    position:relative;
-    left:5%;
-    margin:auto;
-}
