@@ -12,5 +12,6 @@
     "tests"
   ],
   "dependencies": {
+    "webcomponentsjs": "^1.0.0"
   }
 }
