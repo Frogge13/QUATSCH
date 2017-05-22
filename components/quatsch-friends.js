@@ -2,19 +2,15 @@ class QuatschFriends extends HTMLElement {
 
     constructor() {
         super();
-        this._friends = [];
+        this._friends = {};
     }
 
     connectedCallback() {
         this.listFriendElement = document.createElement('ul');
-        this.populateList();
-
         this.appendChild(this.listFriendElement);
     }
 
     populateList() {
-
-        console.log(this._friends );
         while(this.listFriendElement.hasChildNodes())
             this.listFriendElement.removeChild(this.listFriendElement.lastChild);
 
